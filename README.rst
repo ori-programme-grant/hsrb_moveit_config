@@ -24,6 +24,18 @@ If it is the case that you want to execute commands from MoveIt directly against
 .. code-block:: bash
 
    roslaunch hsrb_moveit_config hsrb_demo_with_controller.launch
+   
+If on the robot:
+
+.. code-block:: bash
+   
+   roslaunch hsrb_moveit_config hsrb_demo_with_controller.launch use_gui:=false
+
+Then on connected display PC:
+
+.. code-block:: bash
+
+   roslaunch hsrb_moveit_config moveit_rviz.launch config:=true robot_name:=hsrb debug:=false
 
 LICENSE
 +++++++
